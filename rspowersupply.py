@@ -109,10 +109,10 @@ class PowerSupply():
 
 def test_class():
     with PowerSupply() as psu:
-        print("Current voltage", psu.get_voltage())
+        print("Current voltage", psu.get_actual_voltage())
         print("Set voltage to 2")
         psu.set_voltage(2)
-        print("Current voltage", psu.get_voltage())
+        print("Current voltage", psu.get_actual_voltage())
         print("Set voltage to 0")
         psu.set_voltage(0)
 
