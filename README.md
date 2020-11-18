@@ -5,7 +5,9 @@ Known issues:
 
 Usage example:
 ```python
-with PowerSupply() as psu:
+import rspowersupply
+
+with rspowersupply.PowerSupply() as psu:
     print("Actual voltage", psu.get_actual_voltage())
     print("Set voltage to 2V")
     psu.set_voltage(2)
